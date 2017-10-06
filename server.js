@@ -56,6 +56,13 @@ app.get('/bad', (req,res) => {
   })
 })
 
+app.get('/project',(req,res)=> {
+  res.render('project.hbs',{
+    PageTitle:'Project page',
+    tagLine:'This is a project tagline'
+  })
+})
+
 
 
 app.listen(port, () => {
